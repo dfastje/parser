@@ -22,5 +22,8 @@ public class ParserApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		log.info( "Log timeId 2020-01-01 00:00:00.001 -> {}",
                 repository.findByTimeId("2020-01-01 00:00:00.001") );
+
+        System.out.println();
+        System.out.println("Log timeId 2020-01-01 00:00:00.001 -> " + repository.findByTimeId("2020-01-01 00:00:00.001"));
 	}
 }
